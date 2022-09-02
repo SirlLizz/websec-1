@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="script.js"></script>
+    </head>
+    <body class="body">
+        
+        <div class="container">
+            <input id="input_first" class="element" type="number">
+            <select id="type-operation" class="element" >
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input id="input_second" class="element" type="number">
+        </div>
+        <div class="container">
+            <button id="button-ok" class="element" onclick="getResult()">Вычислить</button>
+        </div>
+        <div class="container">
+            <textarea id="output-result" class="element"></textarea>
+        </div>
+    </body>
+</html>

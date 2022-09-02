@@ -1,0 +1,16 @@
+.body{
+    background-color: palegreen;
+}
+
+.element{
+    margin: 10px auto;
+    display: flex;
+    border-radius: 10px;
+    border-color: red;
+    border-style: dashed;
+    background-color: palegreen;
+}
+
+.container{
+    padding: 10px;
+}
