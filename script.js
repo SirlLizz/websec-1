@@ -1,12 +1,13 @@
 function getResult(){
-    let first = parseFloat(document.getElementById("input_first").value);
-    let second = parseFloat(document.getElementById("input_second").value);
+    let first = document.getElementById("input_first").value;
+    let second = document.getElementById("input_second").value;
     let type = document.getElementById("type-operation").value;
-    console.log(first);
 
-    if(first="NaN" || second =="NaN"){
+    if(first==="" || second ===""){
         alert("Поля не могут быть пустыми");
     }else{
+        first = parseFloat(first);
+        second = parseFloat(second);
         switch(type){
             case "+":
                 document.getElementById("output-result").value = first+second;
@@ -18,7 +19,7 @@ function getResult(){
                 document.getElementById("output-result").value = first*second;
                 break;
             case "/":
-                if(second==0){
+                if(second===0){
                     document.getElementById("output-result").value = "";
                     alert("Делить на ноль нельзя!");
                 }else{
